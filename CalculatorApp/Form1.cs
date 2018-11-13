@@ -12,10 +12,10 @@ namespace CalculatorApp
 {
     public partial class Form1 : Form
     {
-        long result1 = 0;
-        long result2 = 0;
-        long result3 = 0;
-        long result4 = 0;
+        long result1;
+        long result2;
+        long result3;
+        long result4;
         
         
         public Form1()
@@ -38,10 +38,27 @@ namespace CalculatorApp
         }
 
         private void UpdateLabels() {
-            label1.Text = Convert.ToString(result1);
-            label2.Text = Convert.ToString(result2);
-            label3.Text = Convert.ToString(result3);
-            label4.Text = Convert.ToString(result4);
+            try
+            {
+                result1 = Calculate(Convert.ToInt32(mtb1Left.Text), Convert.ToInt32(mtb1Right.Text), comboBox1.Text);
+                label1.Text = Convert.ToString(result1);
+            }
+            catch { }
+            try
+            {
+                result2 = Calculate(Convert.ToInt32(mtb2Left.Text), Convert.ToInt32(mtb2Right.Text), comboBox2.Text);
+                label2.Text = Convert.ToString(result2);
+            } catch { }
+            try
+            {
+                result3 = Calculate(Convert.ToInt32(mtb3Left.Text), Convert.ToInt32(mtb3Right.Text), comboBox3.Text);
+                label3.Text = Convert.ToString(result3);
+            } catch { }
+            try
+            {
+                result4 = Calculate(Convert.ToInt32(mtb4Left.Text), Convert.ToInt32(mtb4Right.Text), comboBox4.Text);
+                label4.Text = Convert.ToString(result4);
+            } catch { }
         }
         //calculates with inputs
         private long Calculate(int x,int y, string operatorType) {
@@ -88,6 +105,11 @@ namespace CalculatorApp
         }
         private void mtb4Right_Click(object sender, EventArgs e) {
             mtb4Right.Select(0, 0);
+        }
+
+        private void mtb1Left_TextChanged(object sender, EventArgs e)
+        {
+            UpdateLabels();
         }
     }
 }

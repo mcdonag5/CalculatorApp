@@ -45,7 +45,6 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // mtb1Left
@@ -59,6 +58,7 @@
             this.mtb1Left.TabIndex = 0;
             this.mtb1Left.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.mtb1Left.Click += new System.EventHandler(this.mtb1Left_Click);
+            this.mtb1Left.TextChanged += new System.EventHandler(this.mtb1Left_TextChanged);
             // 
             // mtb1Right
             // 
@@ -71,6 +71,7 @@
             this.mtb1Right.TabIndex = 1;
             this.mtb1Right.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.mtb1Right.Click += new System.EventHandler(this.mtb1Right_Click);
+            this.mtb1Right.TextChanged += new System.EventHandler(this.mtb1Left_TextChanged);
             // 
             // mtb2Left
             // 
@@ -83,6 +84,7 @@
             this.mtb2Left.TabIndex = 2;
             this.mtb2Left.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.mtb2Left.Click += new System.EventHandler(this.mtb2Left_Click);
+            this.mtb2Left.TextChanged += new System.EventHandler(this.mtb1Left_TextChanged);
             // 
             // mtb2Right
             // 
@@ -95,6 +97,7 @@
             this.mtb2Right.TabIndex = 3;
             this.mtb2Right.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.mtb2Right.Click += new System.EventHandler(this.mtb2Right_Click);
+            this.mtb2Right.TextChanged += new System.EventHandler(this.mtb1Left_TextChanged);
             // 
             // mtb3Left
             // 
@@ -107,6 +110,7 @@
             this.mtb3Left.TabIndex = 4;
             this.mtb3Left.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.mtb3Left.Click += new System.EventHandler(this.mtb3Left_Click);
+            this.mtb3Left.TextChanged += new System.EventHandler(this.mtb1Left_TextChanged);
             // 
             // mtb3Right
             // 
@@ -119,6 +123,7 @@
             this.mtb3Right.TabIndex = 5;
             this.mtb3Right.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.mtb3Right.Click += new System.EventHandler(this.mtb3Right_Click);
+            this.mtb3Right.TextChanged += new System.EventHandler(this.mtb1Left_TextChanged);
             // 
             // mtb4Left
             // 
@@ -131,6 +136,7 @@
             this.mtb4Left.TabIndex = 6;
             this.mtb4Left.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.mtb4Left.Click += new System.EventHandler(this.mtb4Left_Click);
+            this.mtb4Left.TextChanged += new System.EventHandler(this.mtb1Left_TextChanged);
             // 
             // mtb4Right
             // 
@@ -143,6 +149,7 @@
             this.mtb4Right.TabIndex = 7;
             this.mtb4Right.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.mtb4Right.Click += new System.EventHandler(this.mtb4Right_Click);
+            this.mtb4Right.TextChanged += new System.EventHandler(this.mtb1Left_TextChanged);
             // 
             // label1
             // 
@@ -196,6 +203,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(33, 21);
             this.comboBox1.TabIndex = 21;
+            this.comboBox1.SelectedValueChanged += new System.EventHandler(this.mtb1Left_TextChanged);
             // 
             // comboBox2
             // 
@@ -210,6 +218,7 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(33, 21);
             this.comboBox2.TabIndex = 22;
+            this.comboBox2.SelectedValueChanged += new System.EventHandler(this.mtb1Left_TextChanged);
             // 
             // comboBox3
             // 
@@ -224,6 +233,7 @@
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(33, 21);
             this.comboBox3.TabIndex = 23;
+            this.comboBox3.SelectedValueChanged += new System.EventHandler(this.mtb1Left_TextChanged);
             // 
             // comboBox4
             // 
@@ -238,23 +248,13 @@
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(33, 21);
             this.comboBox4.TabIndex = 24;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(200, 195);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(31, 23);
-            this.button1.TabIndex = 25;
-            this.button1.Text = "=";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.comboBox4.SelectedValueChanged += new System.EventHandler(this.mtb1Left_TextChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(267, 256);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox4);
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.comboBox2);
@@ -299,7 +299,6 @@
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.Button button1;
     }
 }
 
