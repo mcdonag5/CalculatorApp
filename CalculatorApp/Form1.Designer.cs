@@ -36,16 +36,21 @@
             this.mtb3Right = new System.Windows.Forms.MaskedTextBox();
             this.mtb4Left = new System.Windows.Forms.MaskedTextBox();
             this.mtb4Right = new System.Windows.Forms.MaskedTextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.labelDivide = new System.Windows.Forms.Label();
+            this.labelTimes = new System.Windows.Forms.Label();
+            this.labelMinus = new System.Windows.Forms.Label();
+            this.labelPlus = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // mtb1Left
             // 
             this.mtb1Left.AsciiOnly = true;
-            this.mtb1Left.Location = new System.Drawing.Point(47, 34);
+            this.mtb1Left.Location = new System.Drawing.Point(13, 12);
             this.mtb1Left.Mask = "99999";
             this.mtb1Left.Name = "mtb1Left";
             this.mtb1Left.PromptChar = ' ';
@@ -56,7 +61,7 @@
             // mtb1Right
             // 
             this.mtb1Right.AsciiOnly = true;
-            this.mtb1Right.Location = new System.Drawing.Point(162, 34);
+            this.mtb1Right.Location = new System.Drawing.Point(128, 12);
             this.mtb1Right.Mask = "99999";
             this.mtb1Right.Name = "mtb1Right";
             this.mtb1Right.PromptChar = ' ';
@@ -67,7 +72,7 @@
             // mtb2Left
             // 
             this.mtb2Left.AsciiOnly = true;
-            this.mtb2Left.Location = new System.Drawing.Point(47, 85);
+            this.mtb2Left.Location = new System.Drawing.Point(13, 63);
             this.mtb2Left.Mask = "99999";
             this.mtb2Left.Name = "mtb2Left";
             this.mtb2Left.PromptChar = ' ';
@@ -78,7 +83,7 @@
             // mtb2Right
             // 
             this.mtb2Right.AsciiOnly = true;
-            this.mtb2Right.Location = new System.Drawing.Point(162, 85);
+            this.mtb2Right.Location = new System.Drawing.Point(128, 63);
             this.mtb2Right.Mask = "99999";
             this.mtb2Right.Name = "mtb2Right";
             this.mtb2Right.PromptChar = ' ';
@@ -89,7 +94,7 @@
             // mtb3Left
             // 
             this.mtb3Left.AsciiOnly = true;
-            this.mtb3Left.Location = new System.Drawing.Point(47, 136);
+            this.mtb3Left.Location = new System.Drawing.Point(13, 114);
             this.mtb3Left.Mask = "99999";
             this.mtb3Left.Name = "mtb3Left";
             this.mtb3Left.PromptChar = ' ';
@@ -100,7 +105,7 @@
             // mtb3Right
             // 
             this.mtb3Right.AsciiOnly = true;
-            this.mtb3Right.Location = new System.Drawing.Point(162, 136);
+            this.mtb3Right.Location = new System.Drawing.Point(128, 114);
             this.mtb3Right.Mask = "99999";
             this.mtb3Right.Name = "mtb3Right";
             this.mtb3Right.PromptChar = ' ';
@@ -111,7 +116,7 @@
             // mtb4Left
             // 
             this.mtb4Left.AsciiOnly = true;
-            this.mtb4Left.Location = new System.Drawing.Point(47, 188);
+            this.mtb4Left.Location = new System.Drawing.Point(13, 166);
             this.mtb4Left.Mask = "99999";
             this.mtb4Left.Name = "mtb4Left";
             this.mtb4Left.PromptChar = ' ';
@@ -122,7 +127,7 @@
             // mtb4Right
             // 
             this.mtb4Right.AsciiOnly = true;
-            this.mtb4Right.Location = new System.Drawing.Point(162, 188);
+            this.mtb4Right.Location = new System.Drawing.Point(128, 166);
             this.mtb4Right.Mask = "99999";
             this.mtb4Right.Name = "mtb4Right";
             this.mtb4Right.PromptChar = ' ';
@@ -130,52 +135,96 @@
             this.mtb4Right.TabIndex = 7;
             this.mtb4Right.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // comboBox1
+            // label1
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "+",
-            "-",
-            "*",
-            "/"});
-            this.comboBox1.Location = new System.Drawing.Point(119, 33);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(37, 21);
-            this.comboBox1.TabIndex = 8;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(211, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.TabIndex = 12;
             // 
-            // comboBox2
+            // label2
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(119, 84);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(37, 21);
-            this.comboBox2.TabIndex = 9;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(211, 66);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 13);
+            this.label2.TabIndex = 13;
             // 
-            // comboBox3
+            // label3
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(119, 135);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(37, 21);
-            this.comboBox3.TabIndex = 10;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(211, 117);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(0, 13);
+            this.label3.TabIndex = 14;
             // 
-            // comboBox4
+            // label4
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(119, 187);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(37, 21);
-            this.comboBox4.TabIndex = 11;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(211, 169);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(0, 13);
+            this.label4.TabIndex = 15;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(58, 202);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 16;
+            // 
+            // labelDivide
+            // 
+            this.labelDivide.AutoSize = true;
+            this.labelDivide.Location = new System.Drawing.Point(101, 169);
+            this.labelDivide.Name = "labelDivide";
+            this.labelDivide.Size = new System.Drawing.Size(12, 13);
+            this.labelDivide.TabIndex = 20;
+            this.labelDivide.Text = "/";
+            // 
+            // labelTimes
+            // 
+            this.labelTimes.AutoSize = true;
+            this.labelTimes.Location = new System.Drawing.Point(101, 117);
+            this.labelTimes.Name = "labelTimes";
+            this.labelTimes.Size = new System.Drawing.Size(11, 13);
+            this.labelTimes.TabIndex = 19;
+            this.labelTimes.Text = "*";
+            // 
+            // labelMinus
+            // 
+            this.labelMinus.AutoSize = true;
+            this.labelMinus.Location = new System.Drawing.Point(101, 66);
+            this.labelMinus.Name = "labelMinus";
+            this.labelMinus.Size = new System.Drawing.Size(10, 13);
+            this.labelMinus.TabIndex = 18;
+            this.labelMinus.Text = "-";
+            // 
+            // labelPlus
+            // 
+            this.labelPlus.AutoSize = true;
+            this.labelPlus.Location = new System.Drawing.Point(101, 15);
+            this.labelPlus.Name = "labelPlus";
+            this.labelPlus.Size = new System.Drawing.Size(13, 13);
+            this.labelPlus.TabIndex = 17;
+            this.labelPlus.Tag = "";
+            this.labelPlus.Text = "+";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(342, 266);
-            this.Controls.Add(this.comboBox4);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.ClientSize = new System.Drawing.Size(267, 233);
+            this.Controls.Add(this.labelDivide);
+            this.Controls.Add(this.labelTimes);
+            this.Controls.Add(this.labelMinus);
+            this.Controls.Add(this.labelPlus);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.mtb4Right);
             this.Controls.Add(this.mtb4Left);
             this.Controls.Add(this.mtb3Right);
@@ -186,6 +235,7 @@
             this.Controls.Add(this.mtb1Left);
             this.Name = "Form1";
             this.Text = "Calculator";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -201,10 +251,15 @@
         private System.Windows.Forms.MaskedTextBox mtb3Right;
         private System.Windows.Forms.MaskedTextBox mtb4Left;
         private System.Windows.Forms.MaskedTextBox mtb4Right;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label labelDivide;
+        private System.Windows.Forms.Label labelTimes;
+        private System.Windows.Forms.Label labelMinus;
+        private System.Windows.Forms.Label labelPlus;
     }
 }
 

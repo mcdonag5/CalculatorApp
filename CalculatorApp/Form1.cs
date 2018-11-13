@@ -12,9 +12,18 @@ namespace CalculatorApp
 {
     public partial class Form1 : Form
     {
+        long plusResult = 0;
+        long minusResult = 0;
+        long timesResult = 0;
+        long divideResult = 0;
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
