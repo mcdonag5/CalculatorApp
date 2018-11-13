@@ -28,43 +28,38 @@ namespace CalculatorApp
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            result1 = Calculate(Convert.ToInt32(mtb1Left.Text), Convert.ToInt32(mtb1Right.Text), comboBox1.Text);
-            result2 = Calculate(Convert.ToInt32(mtb2Left.Text), Convert.ToInt32(mtb2Right.Text), comboBox2.Text);
-            result3 = Calculate(Convert.ToInt32(mtb3Left.Text), Convert.ToInt32(mtb3Right.Text), comboBox3.Text);
-            result4 = Calculate(Convert.ToInt32(mtb4Left.Text), Convert.ToInt32(mtb4Right.Text), comboBox4.Text);
-            UpdateLabels();
-        }
-
-        private void UpdateLabels() {
+        //Updates all the results with the inputted text
+        private void UpdateResult() {
             try
             {
                 result1 = Calculate(Convert.ToInt32(mtb1Left.Text), Convert.ToInt32(mtb1Right.Text), comboBox1.Text);
                 label1.Text = Convert.ToString(result1);
             }
-            catch { }
+            catch { result1 = 0; label1.Text = ""; }
             try
             {
                 result2 = Calculate(Convert.ToInt32(mtb2Left.Text), Convert.ToInt32(mtb2Right.Text), comboBox2.Text);
                 label2.Text = Convert.ToString(result2);
-            } catch { }
+            } catch { result2 = 0; label2.Text = ""; }
             try
             {
                 result3 = Calculate(Convert.ToInt32(mtb3Left.Text), Convert.ToInt32(mtb3Right.Text), comboBox3.Text);
                 label3.Text = Convert.ToString(result3);
-            } catch { }
+            } catch { result3 = 0; label3.Text = ""; }
             try
             {
                 result4 = Calculate(Convert.ToInt32(mtb4Left.Text), Convert.ToInt32(mtb4Right.Text), comboBox4.Text);
                 label4.Text = Convert.ToString(result4);
-            } catch { }
+            } catch { result4 = 0; label4.Text = ""; }
+            
+            
+            
+
         }
         //calculates with inputs
         private long Calculate(int x,int y, string operatorType) {
             long result = 0;
-            switch (operatorType)
-            {
+            switch (operatorType) {
                 case "+":
                     result = x + y;
                     break;
@@ -109,7 +104,7 @@ namespace CalculatorApp
 
         private void mtb1Left_TextChanged(object sender, EventArgs e)
         {
-            UpdateLabels();
+            UpdateResult();
         }
     }
 }
