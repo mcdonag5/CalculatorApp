@@ -79,31 +79,38 @@ namespace CalculatorApp
         //mtb left aline
         private void mtb1Left_Click(object sender, EventArgs e) {
             mtb1Left.Select(0, 0);
+            mtb1Left.Clear();
         }
         private void mtb1Right_Click(object sender, EventArgs e) {
             mtb1Right.Select(0, 0);
+            mtb1Right.Clear();
         }
         private void mtb2Left_Click(object sender, EventArgs e) {
             mtb2Left.Select(0, 0);
+            mtb2Left.Clear();
         }
         private void mtb2Right_Click(object sender, EventArgs e) {
             mtb2Right.Select(0, 0);
+            mtb2Right.Clear();
         }
         private void mtb3Left_Click(object sender, EventArgs e) {
             mtb3Left.Select(0, 0);
+            mtb3Left.Clear();
         }
         private void mtb3Right_Click(object sender, EventArgs e) {
             mtb3Right.Select(0, 0);
+            mtb3Right.Clear();
         }
         private void mtb4Left_Click(object sender, EventArgs e) {
             mtb4Left.Select(0, 0);
+            mtb4Left.Clear();
         }
         private void mtb4Right_Click(object sender, EventArgs e) {
             mtb4Right.Select(0, 0);
+            mtb4Right.Clear();
         }
 
-        private void mtb1Left_TextChanged(object sender, EventArgs e)
-        {
+        private void mtb1Left_TextChanged(object sender, EventArgs e) {
             UpdateResult();
         }
     }
