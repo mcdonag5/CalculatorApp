@@ -25,7 +25,10 @@ namespace CalculatorApp
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            comboBox1.Text = "+";
+            comboBox2.Text = "-";
+            comboBox3.Text = "*";
+            comboBox4.Text = "/";
         }
 
         //Updates all the results with the inputted text
