@@ -87,6 +87,7 @@ namespace CalculatorApp
         private void mtb1Right_Click(object sender, EventArgs e) {
             mtb1Right.Select(0, 0);
             mtb1Right.Clear();
+
         }
         private void mtb2Left_Click(object sender, EventArgs e) {
             mtb2Left.Select(0, 0);
@@ -113,7 +114,8 @@ namespace CalculatorApp
             mtb4Right.Clear();
         }
 
-        private void mtb1Left_TextChanged(object sender, EventArgs e) {
+        private void mtb1Left_TextChanged(object sender, EventArgs e)
+        {
             UpdateResult();
         }
     }
